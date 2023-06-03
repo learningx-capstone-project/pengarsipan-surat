@@ -17,5 +17,10 @@ def login():
 def dashboard():
     return render_template('dashboard.html')
 
+@app.route('/search')
+def search():
+    return render_template('search.html')
+
+
 if __name__ == '__main__':
     app.run('0.0.0.0', port=5008, debug=True)
